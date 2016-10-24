@@ -5,13 +5,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h2><b>PAR</b>ELEC <i>srl</i></h2>
+                        <h2><b>PAR</b>-ELEC <i>srl</i></h2>
                         <p>
                             <span>
-                                 FABRICACIÓN DE PRODUCTOS ELABORADOS EN METAL N.C.P.
+                                 FABRICACION DE PRODUCTOS FERREOS Y NO FERREOS PARA TENDIDO DE LINEAS ELECTRICAS RURALES Y URBANAS.
                             </span>
                         </p>
-                        <span><a class="btn btn-danger" href="#">Vea nuestos Productos y Servicios ...</a></span>
+                        <!--<span><a class="btn btn-danger" href="#">Vea nuestos Productos y Servicios ...</a></span>-->
                     </div>
                 </div>
             </div>

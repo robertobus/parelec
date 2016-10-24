@@ -1,14 +1,19 @@
 <div id="fh5co-header">
     <header id="fh5co-header-section">
         <div class="container">
+            <div style="float: right; color: white; margin-top: 5px;">
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div style="display: inline-block;" class="addthis_inline_share_toolbox"></div>
+                <b style="vertical-align: top;">+54 9 (02241) 475679/15-691962</b>
+            </div>
             <div class="nav-header">
                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-                <h1 id="fh5co-logo"><a href="index.html">PAR<span>ELEC</span><i></i></a></h1>
+                <h1 id="fh5co-logo"><a href="/">PAR<span>-ELEC</span></a></h1>
                 <!-- START #fh5co-menu-wrap -->
                 <nav id="fh5co-menu-wrap" role="navigation">
                     <ul class="sf-menu" id="fh5co-primary-menu">
-                        <li class="active">
-                            <a href="#">Inicio</a>
+                        <li>
+                            <a href="/">Inicio</a>
                         </li>
                         <!--
                         <li>
@@ -32,11 +37,12 @@
                                 <li><a href="#">Photography</a></li>
                             </ul>
                         </li>
-                        -->
+
                         <li><a href="#">Servicios</a></li>
                         <li><a href="#">Productos</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        -->
+                        <li><a href="/nosotros.php">Nosotros</a></li>
+                        <li><a href="/contacto.php">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
