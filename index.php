@@ -49,7 +49,7 @@
                     <div class="col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
                         <div class="fh5co-intro fh5co-table-cell animate-box">
                             <h1 class="text-center">SERVICIOS Y PRODUCTOS ELABORADOS EN METAL</h1>
-                            <p>Consulte nuestra sección de <a href="#">PRODUCTOS</a> y <a href="#">SERVICIOS</a>, o contacte con nosotros <a href="/contacto.php">CONTACTO</a></p>
+                            <p>Consulte nuestra sección de <a href="/productos.php">PRODUCTOS</a> y <a href="#">SERVICIOS</a>, o contacte con nosotros <a href="/contacto.php">CONTACTO</a></p>
                         </div>
                     </div>
                 </div>

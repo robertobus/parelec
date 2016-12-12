@@ -39,8 +39,8 @@
                         </li>
 
                         <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Productos</a></li>
                         -->
+                        <li><a href="/productos.php">Productos</a></li>
                         <li><a href="/nosotros.php">Nosotros</a></li>
                         <li><a href="/contacto.php">Contacto</a></li>
                     </ul>

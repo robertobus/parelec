@@ -14,6 +14,13 @@
 
     <?php include 'partials/head.php' ?>
 
+    <style type="text/css">
+        .team-section-grid {
+            background-size: cover; background-repeat: no-repeat;
+            height: 200px;
+        }
+    </style>
+
 </head>
 <body>
     <div id="fh5co-wrapper">
@@ -21,7 +28,7 @@
 
             <?php include 'partials/header_nav.php' ?>
 
-            <div class="fh5co-parallax" style="background-image: url(images/nosotros-fondo-1.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-parallax" style="background-image: url(images/nosotros/nosotros-fondo-1.jpg);" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row">
@@ -38,10 +45,10 @@
                 <div class="container">
                     <div class="row about">
                         <div class="col-md-6 col-md-offset-0">
-                            <img style="height: 250px;" class="img-responsive animate-box" src="images/nosotros-foto-1.jpg" alt="Nosotros">
+                            <img style="height: 250px;" class="img-responsive animate-box" src="images/nosotros/nosotros-foto-1.jpg" alt="Nosotros">
                         </div>
                         <div class="col-md-6 col-md-offset-0">
-                            <img style="height: 250px;" class="img-responsive animate-box" src="images/nosotros-foto-2.jpg" alt="Nosotros">
+                            <img style="height: 250px;" class="img-responsive animate-box" src="images/nosotros/nosotros-foto-2.jpg" alt="Nosotros">
                         </div>
                         <div class="col-md-12 col-md-offset-0 animate-box">
                             <p>SOMOS UNA EMPRESA ESPECIALIZADA EN LA FABRICACION DE MATERIALES ESTAMPADOS, FERREOS Y NO FERREOS PARA LINEAS ELECTRICAS DE BAJA Y MEDIA TENSION.</p>
@@ -63,19 +70,19 @@
                         </div>
                     </div>
                     <div class="row text-center">
-                        <?php $imagenes = array('nosotros-foto-3.jpg', 'nosotros-foto-4.jpg', 'nosotros-foto-5.jpg', 'nosotros-foto-6.jpg'); ?>
+                        <?php $imagenes = array('nosotros-foto-10.jpg', 'nosotros-foto-4.jpg', 'nosotros-foto-9.jpg', 'nosotros-foto-6.jpg', 'nosotros-foto-7.jpg', 'nosotros-foto-8.jpg', 'nosotros-foto-5.jpg', 'nosotros-foto-3.jpg'); ?>
                         <?php foreach ($imagenes as $imagen): ?>
                         <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="team-section-grid animate-box" style="background-image: url(images/<?php echo $imagen ?>);">
+                            <div class="team-section-grid animate-box" style="background-image: url(images/nosotros/<?php echo $imagen ?>);">
                                 <div class="overlay-section">
                                     <div class="desc">
                                         <h3><b>PAR</b>-ELEC Srl</h3>
                                         <!--<span>Body Trainer</span>-->
                                         <!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>-->
                                         <p class="fh5co-social-icons">
-                                            <a href="#"><i class="icon-twitter-with-circle"></i></a>
-                                            <a href="#"><i class="icon-facebook-with-circle"></i></a>
-                                            <a href="#"><i class="icon-instagram-with-circle"></i></a>
+                                            <a href="https://twitter.com/parelecsrl" target="_blank"><i class="icon-twitter-with-circle"></i></a>
+                                            <a href="http://facebook.com/parelecsrl" target="_blank"><i class="icon-facebook-with-circle"></i></a>
+                                            <a href="https://www.instagram.com/par_elecsrl" target="_blank"><i class="icon-instagram-with-circle"></i></a>
                                         </p>
                                     </div>
                                 </div>

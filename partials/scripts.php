@@ -17,7 +17,7 @@
 <!-- Main JS (Do not remove) -->
 <script src="js/main.js"></script>
 
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!-- Go to www.addthis.com/dashboard to customize your tools-->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f9995bf25883e71"></script>
 
 <script type="text/javascript">

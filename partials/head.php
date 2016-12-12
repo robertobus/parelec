@@ -7,7 +7,7 @@
 
 <link rel="me" href="https://twitter.com/parelecsrl">
 <meta name="twitter:title" content="PAR-ELEC SRL" />
-<meta name="twitter:image" content="http://www.parelec.com.ar/images/image-fb.png" />
+<meta name="twitter:image" content="http://www.parelec.com.ar/images/image-fb.jpg" />
 <meta name="twitter:url" content="http://www.parelec.com.ar" />
 <meta name="twitter:card" content="parelecsrl" />
 
