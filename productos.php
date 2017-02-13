@@ -1,11 +1,16 @@
 <?php
-// Conectando, seleccionando la base de datos
-$user = "u442969788_pe";
-$password = "pe2016";
-try {
-    $pdo_conn = new PDO('mysql:host=localhost;dbname=u442969788_pe', $user, $password, array(PDO::ATTR_PERSISTENT => true));
+// Archivo configuracion
+$config = parse_ini_file('config/config_app.ini', true);
 
-    $qProducts = $pdo_conn->prepare('SELECT * FROM product');
+// Conectando, seleccionando la base de datos
+try {
+    $pdo_conn = new PDO(
+        "mysql:host={$config['database']['db.host']};dbname={$config['database']['db.name']}",
+        $config['database']['db.user'],
+        $config['database']['db.password'],
+        array(PDO::ATTR_PERSISTENT => true)
+    );
+    $qProducts = $pdo_conn->prepare('SELECT * FROM products');
 
     if ($qProducts):
         $qProducts->execute();
@@ -102,22 +107,20 @@ try {
                     </div>
 
                     <div class="block-search row text-center animate-box">
-                        <?php while($prodcut = $qProducts->fetch()): ?>
-                            <?php $cont++; ?>
-                            <?php $image = explode(',',$prodcut['images'])[0]; ?>
-                            <?php $data = explode(',',$prodcut['data'])[0]; ?>
-                        <div class="box-article col-lg-3 col-md-4 col-sm-6" data-search="<?php echo "{$prodcut['name']}" ?>">
-                            <div class="team-section-grid animate-boxx" style="background-image: url(images/productos/<?php echo $image ?>);">
+                        <?php while($product = $qProducts->fetch()): ?>
+                            <?php $data = false; ?>
+                        <div class="box-article col-lg-3 col-md-4 col-sm-6" data-search="<?php echo "{$product['name']}" ?>">
+                            <div class="team-section-grid animate-boxx" style="background-image: url(<?php echo $config['app']['path.image.product'] ."/". $product['image'] ?>);">
                                 <div class="overlay-section">
                                     <div class="desc">
                                         <?php if ($data): ?>
-                                        <a href="<?php echo "images/productos/ET/{$data}" ?>" target="_blank" class="btn btn-default btn-xs">
+                                        <a href="<?php echo "images/productos/ET/{$product['attached']}" ?>" target="_blank" class="btn btn-default btn-xs">
                                             <i class="glyphicon glyphicon-save-file"></i>
                                             Especificaciones Técnicas
                                         </a>
                                         <?php endif; ?>
                                         <br><br><br><br>
-                                        <h3 style="margin-bottom: 0px;"><?php echo $prodcut['name'] ?></h3>
+                                        <h3 style="margin-bottom: 0px;"><?php echo $product['name'] ?></h3>
                                         <!--<span>Body Trainer</span>
                                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
                                         <p class="fh5co-social-icons">

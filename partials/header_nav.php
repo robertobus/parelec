@@ -1,6 +1,9 @@
 <div id="fh5co-header">
     <header id="fh5co-header-section">
         <div class="container">
+            <div style="float: left; margin-top: 5px;">
+                <a style="color:silver;" class="btn btn-link btn-xs" href="http://www.parelec.com.ar/site/backend/public">Uso interno</a>
+            </div>
             <div style="float: right; color: white; margin-top: 5px;">
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div style="display: inline-block;" class="addthis_inline_share_toolbox"></div>
@@ -13,7 +16,7 @@
                 <nav id="fh5co-menu-wrap" role="navigation">
                     <ul class="sf-menu" id="fh5co-primary-menu">
                         <li>
-                            <a href="/">Inicio</a>
+                            <a href="<?php echo "{$config['app']['path.base']}" ?>">Inicio</a>
                         </li>
                         <!--
                         <li>
@@ -40,9 +43,9 @@
 
                         <li><a href="#">Servicios</a></li>
                         -->
-                        <li><a href="/productos.php">Productos</a></li>
-                        <li><a href="/nosotros.php">Nosotros</a></li>
-                        <li><a href="/contacto.php">Contacto</a></li>
+                        <li><a href="<?php echo "{$config['app']['path.base']}productos.php" ?>">Productos</a></li>
+                        <li><a href="<?php echo "{$config['app']['path.base']}nosotros.php" ?>">Nosotros</a></li>
+                        <li><a href="<?php echo "{$config['app']['path.base']}contacto.php" ?>">Contacto</a></li>
                     </ul>
                 </nav>
             </div>

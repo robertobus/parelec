@@ -1,4 +1,11 @@
-<?php //header('Location: http://www.parelec.com.ar/mantenimiento/'); ?>
+<?php
+//header('Location: http://www.parelec.com.ar/mantenimiento/');
+
+// Archivo configuracion
+$config = parse_ini_file('config/config_app.ini', true);
+
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
